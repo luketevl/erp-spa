@@ -1,0 +1,10 @@
+@import 'assets/scss/theme';
+@import 'assets/scss/config';
+
+.Bar{
+  background-color: $colorPrimary;
+  padding: $gutter-xs;
+  text-transform: uppercase;
+  font-size: $font-xs;
+  color: $colorNeutral;
+}
