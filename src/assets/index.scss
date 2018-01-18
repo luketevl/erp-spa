@@ -1,6 +1,11 @@
+@import 'scss/config';
+@import 'scss/themes';
+@import 'scss/functions';
+@import 'scss/typography';
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  font-size: 15px;
+  font-size: useVar(font-size-base, $font-size-base);
 }

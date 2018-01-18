@@ -1,2 +1,11 @@
 $colorPrimary: #4977BC;
-$colorNeutral: #FFF; 
+$colorPrimaryDark: darken($colorPrimary, 10%);
+$colorAccent:  #FFA500;
+$colorAccentDark: darken($colorAccent, 10%);
+$colorNeutral: #FFF;  
+:root{
+  --colorPrimary: $colorPrimary;
+  --colorAccent: $colorAccent;
+  --colorPrimaryDark: $colorPrimaryDark;
+  --colorAccentDark: $colorAccentDark;
+}

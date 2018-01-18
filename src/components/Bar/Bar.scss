@@ -1,8 +1,9 @@
 @import 'assets/scss/theme';
 @import 'assets/scss/config';
+@import 'assets/scss/functions';
 
 .Bar{
-  background-color: $colorPrimary;
+  background-color: useVar(colorPrimary, $colorPrimary);
   padding: $gutter-xs;
   text-transform: uppercase;
   font-size: $font-xs;

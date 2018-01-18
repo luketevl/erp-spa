@@ -1,6 +1,9 @@
+@import 'assets/scss/theme';
 @import 'assets/scss/config';
+@import 'assets/scss/functions';
+
 .Card{
   background-color: rgba(0,0,0,0.04);
   box-shadow: 0 2px 1px #DDD, inset 0 0 0 1px #F1F1F1;
-  padding: $gutter-xs;
+  padding: $gutter-md;
 }

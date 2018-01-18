@@ -1,2 +1,8 @@
 $gutter-xs: 15px;
+$gutter-md: 30px;
 $font-xs: 1em;
+$font-size-base: 15px;
+:root{
+  --font-xs: $font-xs;
+  --font-size-base: $font-size-base;
+}

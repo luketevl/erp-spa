@@ -1,0 +1,21 @@
+@import 'assets/scss/theme';
+@import 'assets/scss/config';
+@import 'assets/scss/functions';
+
+.Button{
+  padding: 10px;
+  border-radius: 0;
+  font-size: 0.9em;
+  border: 0;
+  cursor: pointer;
+  color: useVar(colorNeutral, $colorNeutral); 
+  &--color{
+    &-primary{
+      background-color: useVar(colorPrimaryDark, $colorPrimaryDark); 
+      &:hover{
+        background-color: useVar(colorPrimary, $colorPrimary); 
+      }
+    }
+  }
+  
+}

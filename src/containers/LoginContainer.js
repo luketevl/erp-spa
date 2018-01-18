@@ -1,6 +1,8 @@
 import React from 'react';
 
-import Login from './component/Login';
+import Login from './../components/Login/Login';
+import Card from './../components/Card/Card';
+import  './LoginContainer.css';
 
 export default class LoginContainer extends React.Component{
   constructor(){
@@ -9,7 +11,12 @@ export default class LoginContainer extends React.Component{
 
   render(){
     return(
-      <Login />
+      <section className="LoginContainer">
+        <img src="http://tagsoft.tagplus.com.br/resources/images/temas/tagplus/logo_login.png" />
+        <Card>
+          <Login />
+        </Card>
+      </section>
     );
   }
 }

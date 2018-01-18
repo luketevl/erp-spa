@@ -1,0 +1,12 @@
+@import 'assets/scss/theme';
+@import 'assets/scss/config';
+@import 'assets/scss/functions';
+
+.Label{
+  font-size: 0.9em;
+  color: #555;
+  text-align: left;
+  &--full{
+    display: block;
+  }
+}

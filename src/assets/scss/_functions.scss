@@ -1,0 +1,3 @@
+@function useVar($var, $default){
+ @return var(--#{$var}, $default);
+}
