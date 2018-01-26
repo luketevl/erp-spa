@@ -1,7 +1,10 @@
 $gutter-xs: 15px;
+$gutter-sm: 20px;
 $gutter-md: 30px;
+$gutter-md-2: 40px;
 $font-xs: 1em;
 $font-size-base: 15px;
+$breakPoint-md: 792px;
 :root{
   --font-xs: $font-xs;
   --font-size-base: $font-size-base;

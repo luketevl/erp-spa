@@ -1,10 +1,34 @@
+@import 'assets/scss/theme';
+@import 'assets/scss/config';
+@import 'assets/scss/functions';
+@import 'assets/scss/mixins';
+
 .LoginContainer{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; 
-  height: calc(100vh - 80px);
+  @include flex-center(column);
+  height: calc(100vh - (80px + 47px));
+  
+  @media(min-width: $breakPoint-md){
+    flex-direction: row;    
+  }
+  &__container{
+    @include flex-center(column);
+  }
+  &__links{
+    margin-top: $gutter-sm;
+  }
+  &__brand{
+    margin: $gutter-md 0;
+  @media(min-width: $breakPoint-md){
+    margin-top: 0;
+    margin-right: $gutter-md-2;
+    flex-direction: row;    
+  }
+  }
   .Card{
     width: 250px;
+  }
+
+  .Button{
+    width: 60%;
   }
 }

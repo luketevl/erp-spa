@@ -1,8 +1,7 @@
 import React from 'react';
 
 import Button from './../Button/Button';
-import Input from './../Input/Input';
-import Label from './../Label/Label';
+import GroupField from './../../presentations/GroupField/GroupField';
 
 export default class Login extends React.Component{
   constructor(props){
@@ -12,18 +11,29 @@ export default class Login extends React.Component{
   render(){
     return(
       <div>
-        <Label waiFor="usuário" customClass="full" text="Usuário" />
-        <Input inputClass="" event={() => alert('click')} val="" placeHolder="" />
+        <GroupField 
+          waiFor="usuário" 
+          customClass="full" 
+          text="Usuário"
+          inputClass="" 
+          event={() => alert('click')} 
+          val="" 
+          placeHolder="" />
 
-        <Label waiFor="senha" customClass="full" text="Senha" />
-        <Input inputClass="" event={() => alert('click')} val="" placeHolder="" />
+        <GroupField
+          waiFor="senha"
+          customClass="full"
+          text="Senha"
+          inputClass=""
+          event={() => alert('click')}
+          val=""
+          placeHolder="" />
 
         <Button
           btnClass="color-primary" 
           event={()=>alert('clicked!')}
           text="Entrar" 
         />
-
       </div>
     )
   }
